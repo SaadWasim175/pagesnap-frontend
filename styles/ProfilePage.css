@@ -1,0 +1,69 @@
+.profile-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #1b1b1b, #2c2c2c);
+  color: white;
+}
+
+.profile-main {
+  flex: 1;
+  padding: 2.5rem;
+}
+
+.profile-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #a7dfff;
+}
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.profile-card p {
+  font-size: 1rem;
+  margin: 0.75rem 0;
+  color: #eee;
+}
+
+.logout-btn {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.logoutplace{
+    display: flex;
+    flex-direction: row;
+}
+
+.logoutplace > .logouticon{
+    display: flex;
+    /* flex-direction: row; */
+    align-self: center;
+    margin-right: 5px;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+}
+
+.icon1{
+    margin-left: 760px;
+    /* margin-top: ; */
+
+}

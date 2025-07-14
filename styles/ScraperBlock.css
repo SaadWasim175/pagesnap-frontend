@@ -1,0 +1,169 @@
+.scraper-wrapper {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  max-width: 850px;
+  width: 100%;
+  margin: 2rem auto;
+  box-shadow: 0 0 60px rgba(173, 216, 230, 0.1);
+  color: #fff;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.scraper-heading {
+  font-size: 1.7rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+.scraper-input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.scraper-input {
+  flex: 1 1 300px;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(30, 30, 30, 0.95);
+  color: white;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.scraper-input:focus {
+  border: 1px solid #4fc3f7;
+  box-shadow: 0 0 5px #4fc3f7;
+}
+
+.scraper-clean-toggle {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: flex-start;
+}
+
+.scraper-button {
+  padding: 0.9rem 1.4rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 12px;
+}
+
+.scraper-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.scraper-button.disabled {
+  background: #a7d3f3;
+  color: #333;
+  cursor: not-allowed;
+}
+
+.scraper-output {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  height: 300px;
+  overflow-y: auto;
+  font-family: monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.04);
+}
+
+.scraper-actions {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.scraper-secondary-button {
+  background: rgba(255, 255, 255, 0.07);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.6rem 1.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: all 0.25s ease;
+}
+
+.scraper-secondary-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.tech-stack-info {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  color: #a7dfff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.scraper-assets {
+  margin-top: 2rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  color: #e0e0e0;
+  max-height: 280px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.scraper-assets h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #a7dfff;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+  letter-spacing: 0.5px;
+}
+
+.scraper-assets ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.scraper-assets li {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  word-break: break-all;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: background 0.2s ease;
+}
+
+.scraper-assets li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

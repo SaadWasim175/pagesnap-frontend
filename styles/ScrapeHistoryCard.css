@@ -1,0 +1,166 @@
+/* 📂 Saved Page Layout */
+.saved-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: radial-gradient(
+      ellipse at top left,
+      rgba(67, 67, 67, 0.02),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse at bottom right,
+      rgba(45, 45, 45, 0.03),
+      transparent 60%
+    ),
+    linear-gradient(to bottom, #181818, #262626);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.saved-main {
+  flex: 1;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+  margin-left: 250px;
+}
+
+.page-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #a7dfff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+/* 📐 Grid of Cards */
+.scrape-history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+  padding-bottom: 2rem;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #ccc;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+/* 🧱 ScrapeHistoryCard styles */
+.history-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  height: 460px;
+  max-height: 460px;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+  position: relative;
+  /* margin-left: 180px; */
+}
+
+.history-card:hover {
+  transform: scale(1.02);
+}
+
+.screenshot-preview {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.screenshot-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.no-screenshot {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  border-radius: 8px;
+}
+
+.history-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.history-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta-desc {
+  color: #ccc;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  max-height: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta-url,
+.meta-date,
+.meta-stack {
+  font-size: 0.78rem;
+  color: #aaa;
+  margin-bottom: 0.4rem;
+  word-wrap: break-word;
+  line-height: 1.3;
+}
+
+.history-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.history-actions button {
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.2s ease;
+}
+
+.history-actions button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.delete-btn {
+  background: rgba(255, 50, 50, 0.15);
+}
+
+.delete-btn:hover {
+  background: rgba(255, 50, 50, 0.25);
+}

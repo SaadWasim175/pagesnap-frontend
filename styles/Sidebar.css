@@ -1,0 +1,67 @@
+.sidebar-glass {
+  width: 230px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(51, 51, 51, 0.269)),
+    url('../public/condensation.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  box-shadow: 4px 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  color: #f0faff;
+  transform: scale(1.02);
+}
+
+.logout-btn {
+  margin-top: 25rem;
+  background: rgba(255, 0, 0, 0.183);
+  color: #ffcccc;
+  /* background-color: rgba(255, 255, 255, 0.452); */
+}
+.logout-btn:hover {
+  background: rgba(255, 0, 0, 0.15);
+  color: white;
+}

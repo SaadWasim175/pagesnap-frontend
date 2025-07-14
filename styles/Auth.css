@@ -1,0 +1,144 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+}
+
+/* Spotlight Glow Background */
+.bkg__spotlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background:
+    radial-gradient(75% 35% at 50% 95%, rgba(80, 82, 98, 0.6) 20%, rgba(80, 82, 98, 0) 90%),
+    linear-gradient(rgba(28, 35, 50, 0) 0%, rgba(28, 35, 50, 1) 80%);
+  z-index: -2;
+}
+
+.bkg__spotlight:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(50vw 60vw at 50% 70%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 60%),
+    radial-gradient(35% 15% at 50% 85%, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: -1;
+}
+
+/* Snowfall Animation */
+.snowflake {
+  position: fixed;
+  top: -10px;
+  color: white;
+  font-size: 1rem;
+  opacity: 0.6;
+  animation: fall linear infinite;
+  z-index: 1;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) translateX(0);
+  }
+  100% {
+    transform: translateY(110vh) translateX(20px);
+  }
+}
+
+/* Flex Wrapper */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+/* Glass Signup Box */
+.glass-box {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.08);
+  text-align: center;
+  color: white;
+  animation: fadeInUp 1.2s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.glass-box h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.2px;
+}
+
+.glass-box input {
+  width: 100%;
+  padding: 0.85rem;
+  margin: 0.75rem 0;
+  border: none;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.glass-box button {
+  width: 100%;
+  padding: 0.85rem;
+  margin-top: 1.2rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.glass-box button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.glass-box p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #f88;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.alert{
+    margin-top: 15px;
+}
+
+.dashboard-head{
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
