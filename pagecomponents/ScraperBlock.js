@@ -32,7 +32,7 @@ export default function ScraperBlock() {
     setHtmlCode("");
 
     try {
-      const res = await fetch("https://74daa82d67b4.ngrok-free.app/scrape", {
+      const res = await fetch("https://d37aa7df2c0d.ngrok-free.app/scrape", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
